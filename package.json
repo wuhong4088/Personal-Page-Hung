@@ -1,0 +1,11 @@
+{
+  "name": "personal-page",
+  "version": "1.0.0",
+  "description": "CS 5610 Project 1 - Personal Portfolio",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "Wu-Hung Hsiao",
+  "license": "MIT"
+}

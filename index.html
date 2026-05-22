@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wu-Hung Hsiao - Personal Portfolio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar (Bootstrap 5) -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">Wu-Hung Hsiao's Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="extra.html">Certifications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="container academic-container">
+        
+        <!-- About Me Section -->
+        <h2 class="section-title">About Me</h2>
+        <!-- Clearfix container for Floating layout -->
+        <div class="clearfix mb-5">
+            <!-- Profile Image (Floating left) -->
+            <img src="images/profile.jpg" alt="Wu-Hung Hsiao Profile Picture" class="profile-image">
+            
+            <p class="mb-3">Hi! I'm Wu-Hung Hsiao, a backend software engineer and Master's student in Cybersecurity at Northeastern University based in Boston, MA. My professional journey is defined by a passion for building robust, scalable systems and streamlining complex data pipelines.</p>
+            <p>With a strong foundation in C# and .NET Core, I specialize in architecting high-performance backend infrastructure capable of processing millions of daily transactions. Additionally, I have extensive experience engineering custom Python and Linux shell scripts to automate rigorous testing workflows and elevate data accuracy. Moving forward, I am excited to combine my software engineering expertise with advanced cybersecurity practices to build secure, resilient, and data-driven cloud solutions.</p>
+        </div>
+
+        <hr class="academic-hr">
+
+        <!-- Education Section -->
+        <h2 class="section-title">Education</h2>
+        
+        <div class="entry-heading">— Master's Degree (Sep 2025 ~ Present) —</div>
+        <!-- Relative Positioning wrapper for Absolute badge -->
+        <div class="entry-row relative-box">
+            <span class="current-badge">Current</span>
+            <div class="entry-content">
+                <h3>Master of Science in Cybersecurity</h3>
+                <p class="org-name">Northeastern University (NEU)</p>
+                <p class="text-secondary small mt-2">Coursework: Intensive CS, Discrete Structures, Software Security, Cybersecurity Defenses</p>
+            </div>
+        </div>
+
+        <hr class="academic-hr">
+
+        <div class="entry-heading">— Bachelor's Degree (Dec 2020) —</div>
+        <div class="entry-row">
+            <div class="entry-content">
+                <h3>Bachelor of Arts in Economics</h3>
+                <p class="org-name">University of Minnesota, Twin Cities (UMN)</p>
+                <p class="text-secondary small mt-2">Coursework: Econometrics, Regression Analysis, Computer Science Fundamentals (Python)</p>
+            </div>
+        </div>
+
+        <hr class="academic-hr">
+
+        <!-- Work Experience Section -->
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="entry-heading">— Software Development Engineer (Oct 2022 ~ Aug 2025) —</div>
+        <div class="entry-row">
+            <div class="entry-content">
+                <h3>Backend Infrastructure & API Development</h3>
+                <p class="org-name">Unition Technology</p>
+                <p class="text-secondary small mt-2">Scaled transaction capacity to 24M+ daily, built real-time dashboards reducing maintenance by 80%, and engineered high-performance RESTful APIs integrating game providers.</p>
+            </div>
+        </div>
+
+        <hr class="academic-hr">
+
+        <div class="entry-heading">— Software Test Engineer (Dec 2020 ~ Oct 2022) —</div>
+        <div class="entry-row">
+            <div class="entry-content">
+                <h3>Test Automation & Data Pipeline</h3>
+                <p class="org-name">Google (Contractor)</p>
+                <p class="text-secondary small mt-2">Boosted data labeling accuracy to 99% via Python scripts and reduced manual testing time by 80% with Linux shell scripts for Android Compliance Tests.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wu-Hung Hsiao. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

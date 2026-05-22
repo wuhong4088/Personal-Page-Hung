@@ -1,0 +1,174 @@
+%-------------------------
+% Jake's Resume Template
+% Wu-Hung Hsiao — converted from Onepage resume v2
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{newtxtext}   % Times New Roman
+\usepackage[T1]{fontenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Wu-Hung Hsiao} \\ \vspace{1pt}
+    \small
+    \faPhone\ +1 339-226-2664 $|$
+    \href{mailto:hsiao.wu@northeastern.edu}{\faEnvelope\ hsiao.wu@northeastern.edu} $|$
+    \faMapMarker\ Boston, MA
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Cybersecurity}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Intensive CS, Discrete Structures, Software Security, Cybersecurity Defenses}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Minnesota, Twin Cities}{Minneapolis, MN}
+      {Bachelor of Arts in Economics}{Dec 2020}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Econometrics, Regression Analysis, Computer Science Fundamentals (Python)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Unition Technology}{Taipei City, Taiwan}
+      {Software Development Engineer}{Oct 2022 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Scaled transaction capacity to 24M+ daily and achieved 99.9\% uptime by optimizing ASP.NET Core and SQL indexing.}
+        \resumeItem{Reduced maintenance overhead by 80\% by building a centralized real-time operations dashboard for non-technical staff.}
+        \resumeItem{Boosted productivity by 30\% by spearheading company-wide n8n automation training across admin and dev workflows.}
+        \resumeItem{Reduced data retrieval latency by 40\% and integrated 5+ game providers by engineering high-performance RESTful APIs.}
+        \resumeItem{Slashed regression testing from 3 days to 4 hours and increased QA capacity by 50\% by standardizing automated testing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Google (Contractor)}{New Taipei City, Taiwan}
+      {Software Test Engineer}{Dec 2020 -- Oct 2022}
+      \resumeItemListStart
+        \resumeItem{Tripled data labeling throughput and boosted accuracy from 83\% to 99\% by developing Python automation scripts.}
+        \resumeItem{Reduced manual testing time by 80\% by engineering Linux shell scripts to automate Android Compliance Tests.}
+        \resumeItem{Achieved 100\% on-time delivery of ML training datasets by streamlining the data labeling pipeline and aligning data requirements with ML engineers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS & CERTIFICATIONS-----------
+\section{Technical Skills \& Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Tools}{: Python, C\#, SQL, Shell Scripting, R, .NET Core, Selenium, ADB, Git, Docker, Jenkins, n8n} \\
+     \textbf{Cloud \& Domains}{: Google Cloud Platform (GCP), AWS, CI/CD, Linux, Backend Development, APIs, Test Automation} \\
+     \textbf{Certifications (2021--2025)}{: Foundation of Responsible AI $|$ Randomized Algorithms $|$ AWS Cloud IT $|$ Google AI Essentials $|$ Agile with Jira $|$ Google Cloud Fundamentals $|$ Google IT Support $|$ Google Data Analytics}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Economic Impact Analysis} $|$ \emph{University Capstone Project $|$ R, Statistical Modeling}}{}
+          \resumeItemListStart
+            \resumeItem{Advanced data interpretation from raw datasets to validated predictions by building multivariable regression models in R to analyze the impact of education spending on OECD national income.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Infa} $|$ \emph{Backend Infrastructure Library $|$ C\#, ASP.NET Core, Redis}}{}
+          \resumeItemListStart
+            \resumeItem{Reduced microservice setup time from days to hours by engineering a centralized .NET library encapsulating Redis and HTTP to accelerate backend development and eliminate code duplication.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
