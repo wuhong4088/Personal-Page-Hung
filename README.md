@@ -1,7 +1,7 @@
 # Wu-Hung Hsiao - Personal Portfolio (Project 1)
 
-**Author:** [Wu-Hung Hsiao]([Insert Link to your Homepage or GitHub Profile Here])  
-**Class Link:** [CS 5610 Web Development]([Insert Link to Canvas or Class Website Here])
+**Author:** [Wu-Hung Hsiao](https://github.com/wuhong4088)  
+**Class Link:** [CS 5610 Web Development](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 
 ## Project Objective
 In this assignment, we are implementing a personal homepage using vanilla HTML5, CSS3, and ES6+. This is a front-end only static site, avoiding backend frameworks and large UI component libraries (like React or Vue). All custom JavaScript is written in ES6 modules.
@@ -9,30 +9,34 @@ In this assignment, we are implementing a personal homepage using vanilla HTML5,
 The project features a **creative addition**: A dynamic "Filterable Certifications List" on the *Certifications* page (`extra.html`), using vanilla JavaScript to filter Cloud, Data/AI, and Process certifications smoothly via DOM manipulation.
 
 ## Links (Submission Requirements)
-* **Deployed URL (GitHub Pages)**: [Insert Link Here]
-* **Presentation (Google Slides)**: [Insert Public Link Here]
-* **Video Demonstration**: [Insert YouTube/Video Link Here]
+* **Deployed URL (GitHub Pages)**: [https://wuhong4088.github.io/Personal-Page-Hung/](https://wuhong4088.github.io/Personal-Page-Hung/)
+* **Presentation (Google Slides)**: [Google Slides Presentation](https://docs.google.com/presentation/d/1T7P345ChIF7ICOKhVh0haiuZC-nKZ28i2EZMVnt9QJc/edit)
+* **Video Demonstration**: [YouTube Live Demo](https://youtu.be/NFlVazZFq1g)
 
 ## Screenshot
-*(Ensure you take a screenshot of your live site and replace the path below. Gifs are preferred!)*
-![Homepage Screenshot/Gif](./images/screenshot.gif)
+![Homepage Screenshot](./images/screenshot.png)
 
 ## Tech Requirements
 * Vanilla HTML5 & CSS3
 * Bootstrap 5 (Navbar & Grid Utilities)
 * Custom CSS Layouts (Flexbox & CSS Grid)
-* Google Fonts (Inter)
 * Relative & Absolute Positioning
 * ES6+ JavaScript (Modules)
-* No Backend or heavy frontend frameworks (like React/Vue)
 
 ## Instructions to Build
-Since this is a static website, no complex build tools are required.
-1. Clone the repository to your local machine.
-2. Open the project folder in VSCode.
-3. Install the **Live Server** extension.
-4. Right-click on `index.html` and select **"Open with Live Server"**.
-5. Alternatively, run any simple static server (e.g., `npx serve .` or `python3 -m http.server 8000`).
+
+```bash
+# Clone the repository
+git clone https://github.com/wuhong4088/Personal-Page-Hung.git
+
+# Navigate into the project
+cd Personal-Page-Hung
+
+# Run local static server
+npx serve .
+```
+
+After running the command, check your terminal for the local server URL (typically `http://localhost:3000`). Open that URL in your browser to view the site locally.
 
 ## Pages
 | Page | URL | Description |
@@ -44,15 +48,18 @@ Since this is a static website, no complex build tools are required.
 ## AI Tool Usage
 **Describe the use of GenAI tools if any. Provide what models were used, versions, prompts, and how it was used.**
 
-I used AI (Gemini 3.1 Pro via AntiGravity IDE) primarily to assist in developing the "Certifications" page (`extra.html`) and its associated features. My workflow was as follows:
+I used AI (Gemini 3.1 Pro via AntiGravity IDE) primarily to assist in developing the "Certifications" page (`extra.html`) and to structure this `README.md`. My workflow was as follows:
 
 1. **Data Sourcing:** I downloaded my personal LinkedIn profile as a PDF document.
-2. **Content Extraction & Feature Generation:** I provided the PDF to the AI and used the following prompt to generate the HTML layout and the Vanilla JavaScript filtering logic (`js/activities.js`):
+2. **Content Extraction & HTML Layout:** I provided the PDF to the AI and used the following prompt to generate the HTML structure for the certifications page (`extra.html`). After the HTML was generated, I manually wrote the custom Vanilla JavaScript (`js/activities.js`) from scratch to implement the dynamic filtering logic.
 
    **Prompt Used:**
-   > *"Here is my LinkedIn profile exported as a PDF. Please extract my real certifications and professional achievements. Using this data, generate an HTML page (`extra.html`) with a clean, academic layout. Include a Vanilla JavaScript feature that allows users to dynamically filter my achievements by category (e.g., Cloud, AI & Data, Process). Do not use jQuery, only use ES6 modules and Vanilla JS."*
+   > *"Here is my LinkedIn profile exported as a PDF. Please extract my real certifications and professional achievements. Using this data, generate an HTML page (`extra.html`) with a clean, academic layout. Please organize the items into categories like Cloud, AI & Data, and Process so I can later write my own JavaScript to filter them."*
 
-This workflow allows anyone to easily generate a highly personalized, interactive page based on their own LinkedIn data while strictly adhering to the project's vanilla JavaScript constraints.
+3. **README Generation:** I also provided the AI with the project requirements and used it to format and generate this `README.md` file.
+
+   **Prompt Used:**
+   > *"Please help me write a README.md for my personal portfolio website project. Please include the following exact sections: Project Objective, Links, Screenshot, Tech Requirements, Instructions to Build, AI Tool Usage, Video Demonstration, and License. The project is a personal portfolio homepage built with vanilla HTML5, CSS3, ES6+, Bootstrap 5, and custom CSS Layouts. Please use standard GitHub Markdown formatting."*
 
 ## License
 MIT License
